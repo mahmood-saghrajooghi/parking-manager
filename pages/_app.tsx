@@ -7,8 +7,10 @@ import { isServer } from "../utils/isServer";
 import { AppProviders } from "../context";
 import AuthChecker from "../auth-checker";
 
-const { worker } = require("../mocks/browser");
-worker.start();
+if (!isServer()) {
+  const { worker } = require("../mocks/browser");
+  worker.start();
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
