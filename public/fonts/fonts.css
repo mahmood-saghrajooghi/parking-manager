@@ -1,0 +1,23 @@
+@font-face {
+  font-family: BYekan;
+  src: url("./BYekan-regular.woff2");
+  src: url('BYekan-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BYekan;
+  src: url("./BYekan-light.eot");
+  src: url('BYekan-light.woff2') format('woff2');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BYekan;
+  src: url("./BYekan-bold.eot");
+  src: url('BYekan-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}

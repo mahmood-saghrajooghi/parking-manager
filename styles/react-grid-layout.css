@@ -1,0 +1,29 @@
+.react-grid-item.react-grid-placeholder {
+  background: none !important;
+  border: 2px dashed white;
+  border-radius: 5px;
+}
+
+/* handles */
+.react-grid-item > .react-resizable-handle {
+    border-radius: 2px;
+  width: 4px;
+  height: 70%;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-w,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-e {
+  margin-top: -7px;
+}
+.react-grid-item > .react-resizable-handle::after {
+  display: none;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-e {
+  right: 3px;
+  transform: none;
+  background: white;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-w {
+  left: 3px;
+  transform: none;
+  background: white;
+}
