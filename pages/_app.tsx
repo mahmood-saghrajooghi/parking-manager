@@ -7,7 +7,7 @@ import { isServer } from "../utils/isServer";
 import { AppProviders } from "../context";
 import AuthChecker from "../auth-checker";
 
-if (process.env.NODE_ENV === "development" && !isServer()) {
+if (['development', 'demo'].includes(process.env.NODE_ENV) && !isServer()) {
   const { worker } = require("../mocks/browser");
   worker.start();
 }
