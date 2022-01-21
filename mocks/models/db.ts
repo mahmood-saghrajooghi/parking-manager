@@ -56,8 +56,8 @@ export async function load() {
     !data.user.find((u: any) => u.email === "mahmoodsagharjooghi@gmail.com")
   ) {
     db.user.create({
-      email: "mahmoodsagharjooghi@gmail.com",
-      passwordHash: hashPasswordStr("5501-40-51"),
+      email: "admin@admin.com",
+      passwordHash: hashPasswordStr("admin"),
       type: "ADMIN",
     });
   }
