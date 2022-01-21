@@ -8,9 +8,15 @@ export default function forgotPassword() {
       <div className="h-screen w-screen flex items-center justify-center">
         <div className="p-4 w-96 bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
           <form className="space-y-6" action="#">
-            <h3 className="text-md font-bold text-gray-900 dark:text-white">
-              ثبت نام
-            </h3>
+            <div className="flex justify-between items-center">
+              <h3 className="text-md font-bold text-gray-900 dark:text-white">
+                فراموشی رمز عبور
+              </h3>
+
+              <Link href="/">
+                <a className="text-md text-blue-500 hover:underline">👈</a>
+              </Link>
+            </div>
             <div>
               <label
                 htmlFor="email"
